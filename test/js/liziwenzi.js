@@ -368,7 +368,7 @@ S.Dot = function (x, y) {
     this.e = 0.07;
     this.s = true;
 //点的颜色
-    this.c = new S.Color(10, 240, 240, this.p.a);
+    this.c = new S.Color(1, 255, 255, this.p.a);
 
     this.t = this.clone();
     this.q = [];
