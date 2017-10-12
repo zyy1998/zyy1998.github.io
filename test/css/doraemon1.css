@@ -1,0 +1,358 @@
+/*哆啦A梦*/
+
+.doa {
+    position: relative;
+    top: 20px;
+}
+
+.head {
+    margin: 0 auto;
+    width: 300px;
+    height: 262.5px;
+    background: #008ee3;
+    position: relative;
+    border-radius: 50% 50% 25% 25% / 55% 55% 45% 45%;
+}
+
+.head:hover .face > div:first-child div {
+    left: 0px;
+    transition: all 1s;
+}
+
+.head:hover .face > div:first-child div div {
+    left: 0px;
+    transition: all 1s;
+}
+
+.head:hover {
+
+}
+
+.face {
+    width: 232.5px;
+    height: 195px;
+    background: snow;
+    border-radius: 50% 50% 25% 25% / 55% 55% 45% 45%;
+    position: relative;
+    top: 67.5px;
+    left: 33.75px;
+}
+
+/*左眼眶*/
+.face > div:first-child {
+    width: 60px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1.5px #000 solid;
+    background: snow;
+    float: left;
+    position: relative;
+    top: -30px;
+    left: 53.25px;
+    z-index: 50;
+}
+
+/*右眼眶*/
+.face > div:last-child {
+    width: 60px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1.5px #000 solid;
+    background: snow;
+    float: left;
+    position: relative;
+    top: -30px;
+    left: 53.25px;
+    z-index: 50;
+}
+
+/*左眼珠1*/
+.face > div:first-child div {
+    width: 15px;
+    height: 18.75px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 33.75px;
+    left: 45px;
+}
+
+/*左瞳孔*/
+.face > div:first-child div div {
+    width: 7.5px;
+    height: 7.5px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 5.25px;
+    left: 7.5px;
+}
+
+/*右眼珠*/
+.face > div:last-child div {
+    width: 15px;
+    height: 18.75px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 33.75px;
+}
+
+/*右瞳孔*/
+.face > div:last-child div div {
+    width: 7.5px;
+    height: 7.5px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 5.25px;
+}
+
+.nose {
+    width: 22.5px;
+    height: 22.5px;
+    border-radius: 50%;
+    background: #c70000;
+    position: absolute;
+    top: 97.5px;
+    left: 50%;
+    margin-left: -11.25px;
+    z-index: 10;
+}
+
+.nose div {
+    width: 7.5px;
+    height: 7.5px;
+    border-radius: 50%;
+    position: absolute;
+    background: #ffffff;
+    top: 7.5px;
+    margin-left: 15px;
+    z-index: 10;
+}
+
+.nose1 {
+    width: 1.5px;
+    height: 97.5px;
+    background: #000;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    margin-left: -0.75px;
+    z-index: 10;
+}
+
+.mouth {
+    width: 187.5px;
+    height: 150px;
+    border-radius: 50%;
+    background: snow;
+    border-bottom: 1.5px #000 solid;
+    margin: -172.5px auto;
+    position: relative;
+}
+
+.mouth div:first-child {
+    width: 61.5px;
+    height: 1.5px;
+    background: #000;
+    position: absolute;
+    z-index: 1000;
+    top: -18.75px;
+    left: 4.5px;
+    display: none;
+}
+
+.mouth div:nth-child(2) {
+    width: 61.5px;
+    height: 1.5px;
+    background: #000;
+    position: absolute;
+    z-index: 1000;
+    top: -18.75px;
+    left: 67.5px;
+    display: none;
+}
+
+.mouth:hover {
+    border-radius: 0;
+    width: 135px;
+    height: 150px;
+}
+
+.mouth:hover div:first-child, .mouth:hover div:nth-child(2) {
+    display: block;
+}
+
+.neck {
+    width: 247.5px;
+    height: 150px;
+    border-radius: 50% 50% 20% 20% / 50% 50% 50% 50%;
+    background: #e30000;
+    margin: 60px auto;
+    z-index: 100;
+}
+
+.neck div:first-child {
+    border: 1.5px #000 solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #ffdd2e;
+    position: absolute;
+    top: 262.5px;
+    left: 50%;
+    margin-left: -16.5px;
+    transition: all 1s;
+}
+
+.neck div:nth-child(2) {
+    border: 1.5px #000 solid;
+    width: 33px;
+    height: 3.75px;
+    background: #ffdd2e;
+    position: absolute;
+    left: 50%;
+    margin-left: -18px;
+    top: 272.25px;
+    border-radius: 3.75px;
+    transition: all 1s;
+}
+
+.neck div:nth-child(3) {
+    width: 6px;
+    height: 6px;
+    border: 1.5px #000 solid;
+    position: absolute;
+    background: #6c5844;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -4.5px;
+    top: 281.25px;
+    transition: all 1s;
+}
+
+.neck div:nth-child(4) {
+    width: 1.5px;
+    height: 6px;
+    background: #000;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.75px;
+    top: 288.75px;
+    transition: all 1s;
+}
+
+.neck:hover div:first-child {
+    width: 45px;
+    height: 45px;
+    left: 50%;
+    margin-left: -22.5px;
+}
+
+.neck:hover div:nth-child(2) {
+    width: 49.5px;
+    height: 5.625px;
+    left: 50%;
+    margin-left: -24.75px;
+}
+
+.neck:hover div:nth-child(3) {
+    width: 9px;
+    height: 9px;
+    left: 50%;
+    margin-left: -4.5px;
+    top: 288.75px;
+}
+
+.neck:hover div:nth-child(4) {
+    width: 1.5px;
+    height: 9px;
+    left: 50%;
+    margin-left: 1.75px;
+    top: 300px;
+}
+
+.beard .left div:first-child {
+    width: 90px;
+    height: 30px;
+    border-top: 1.5px #000 solid;
+    border-radius: 10% 90% 10% 90% / 10% 90% 10% 90%;
+    position: absolute;
+    left: 50%;
+    top: 105px;
+    margin-left: -127.5px;
+    z-index: 100;
+}
+
+.beard .left div:nth-child(2) {
+    width: 90px;
+    height: 30px;
+    border-top: 1.5px #000 solid;
+    border-radius: 10% 90% 10% 90% / 30% 70% 40% 60%;
+    position: absolute;
+    left: 50%;
+    top: 127.5px;
+    margin-left: -127.5px;
+    z-index: 100;
+}
+
+.beard .left div:last-child {
+    width: 90px;
+    height: 30px;
+    border-top: 1.5px #000 solid;
+    border-radius: 10% 90% 10% 90% / 40% 60% 10% 90%;
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    margin-left: -127.5px;
+    z-index: 100;
+}
+
+.beard .right div:first-child {
+    width: 90px;
+    height: 30px;
+    border-top: 1.5px #000 solid;
+    border-radius: 90% 10% 90% 10% / 90% 10% 90% 10%;
+    position: absolute;
+    left: 50%;
+    top: 105px;
+    margin-left: 37.5px;
+    z-index: 100;
+}
+
+.beard .right div:nth-child(2) {
+    width: 90px;
+    height: 30px;
+    border-top: 1.5px #000 solid;
+    border-radius: 90% 10% 90% 10% / 70% 30% 60% 40%;
+    position: absolute;
+    left: 50%;
+    top: 127.5px;
+    margin-left: 37.5px;
+    z-index: 100;
+}
+
+.beard .right div:last-child {
+    width: 90px;
+    height: 30px;
+    border-top: 1.5px #000 solid;
+    border-radius: 90% 10% 90% 10% / 60% 40% 90% 10%;
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    margin-left: 37.5px;
+    z-index: 100;
+}
+
+.beard span {
+    display: block;
+    width: 45px;
+    height: 2.625px;
+    background: #ffffff;
+    border-radius: 3px;
+    position: absolute;
+    top: 264px;
+    left: 50%;
+    margin-left: -78.75px;
+}

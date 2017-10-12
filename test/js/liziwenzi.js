@@ -1,18 +1,4 @@
 
-/*
-
- Shape Shifter
- =============
- A canvas experiment by Kenneth Cachia
- http://www.kennethcachia.com
-
- Updated code
- ------------
- https://github.com/kennethcachia/Shape-Shifter
-
- */
-
-
 var S = {
     init: function () {
         var action = window.location.href,
@@ -381,8 +367,8 @@ S.Dot = function (x, y) {
 
     this.e = 0.07;
     this.s = true;
-
-    this.c = new S.Color(255, 255, 255, this.p.a);
+//点的颜色
+    this.c = new S.Color(10, 240, 240, this.p.a);
 
     this.t = this.clone();
     this.q = [];
