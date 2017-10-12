@@ -10,7 +10,9 @@ var S = {
         if (i !== -1) {
             S.UI.simulate(decodeURI(action).substring(i + 3));
         } else {
-            S.UI.simulate('欢迎来到|哆啦A梦|没有毛|#countdown 3|');
+            S.UI.simulate('欢迎来到|哆啦A梦.ink|好男人就是我|我就是|赵永远|');
+
+        // |#countdown 3
         }
 
         S.Drawing.loop(function () {
